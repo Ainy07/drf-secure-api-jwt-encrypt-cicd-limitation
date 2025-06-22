@@ -1,11 +1,7 @@
-# drf-secure-api-jwt-encrypt-cicd-limitation
-A fully-featured Django Rest Framework (DRF) project with JWT authentication, field-level AES encryption, API rate limiting, and CI/CD integration using GitHub Actions. Designed to demonstrate secure API development with access control, token-based authentication, and request throttling — ideal for production-grade systems.
-
-
-
 # 🛡️ drf-secure-api-jwt-encrypt-cicd-limitation
 
-A fully-featured Django Rest Framework (DRF) project implementing **JWT authentication**, **AES field-level encryption**, **API rate limiting**, and **CI/CD** via GitHub Actions.
+A fully-featured Django Rest Framework (DRF) project implementing **JWT authentication**, **AES field-level encryption**, **API rate limiting**, and **CI/CD integration via GitHub Actions**. Designed to demonstrate secure API development with access control, token-based authentication, encrypted data storage, request throttling, and automated testing — ideal for production-grade systems.
+
 
 Designed to demonstrate how to build secure, production-ready REST APIs with token-based access, encrypted data storage, request throttling, and automated testing pipelines.
 
