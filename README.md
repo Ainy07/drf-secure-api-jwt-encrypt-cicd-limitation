@@ -106,7 +106,7 @@ python manage.py runserver
 
 ## 🔐 API Authentication Flow
 ### 🔸 1. Obtain Token
-# POST /api/token/
+## POST /api/token/
 
 ```json
 
@@ -128,7 +128,7 @@ python manage.py runserver
 ```
 
 ### 🔸 2. Access Secure Endpoint
-# POST /api/secure-data/
+## POST /api/secure-data/
 
 Headers:
 
@@ -138,7 +138,7 @@ Authorization: Bearer <access_token>
 
 ```
 
-# Body:
+## Body:
 
 ```json
 
@@ -147,7 +147,7 @@ Authorization: Bearer <access_token>
 }
 ```
 
-# Response:
+## Response:
 
 ```json
 
@@ -158,7 +158,7 @@ Authorization: Bearer <access_token>
 ```
 
 ### ✅ Running Tests
-# To run the API tests:
+## To run the API tests:
 
 ```bash
 
