@@ -65,7 +65,7 @@ drf-secure-api-jwt-encrypt-cicd-limitation/
 ```bash
 git clone https://github.com/Ainy07/drf-secure-api-jwt-encrypt-cicd-limitation.git
 cd drf-secure-api-jwt-encrypt-cicd-limitation
-
+```
 
 
 2. Create & Activate Virtual Environment
