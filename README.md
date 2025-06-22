@@ -65,12 +65,11 @@ drf-secure-api-jwt-encrypt-cicd-limitation/
 ```bash
 git clone https://github.com/Ainy07/drf-secure-api-jwt-encrypt-cicd-limitation.git
 cd drf-secure-api-jwt-encrypt-cicd-limitation
-
+```
 
 ### 2. Create & Activate Virtual Environment
 ```bash
-Copy
-Edit
+
 python -m venv env
 source env/bin/activate      # On Linux/Mac
 env\Scripts\activate         # On Windows
@@ -79,15 +78,13 @@ env\Scripts\activate         # On Windows
 
 ### 3. Install Dependencies
 ```bash
-Copy
-Edit
+
 pip install -r requirements.txt
 ```
 
 ### 4. Run Migrations
 ```bash
-Copy
-Edit
+
 python manage.py makemigrations
 python manage.py migrate
 ```
@@ -95,16 +92,14 @@ python manage.py migrate
 
 ### 5. Create Superuser
 ```bash
-Copy
-Edit
+
 python manage.py createsuperuser
 ```
 
 
 ### 6. Run Server
 ```bash
-Copy
-Edit
+
 python manage.py runserver
 ``` 
 
@@ -114,8 +109,7 @@ python manage.py runserver
 # POST /api/token/
 
 ```json
-Copy
-Edit
+
 {
   "username": "yourusername",
   "password": "yourpassword"
@@ -125,8 +119,7 @@ Edit
 # Response:
 
 ```json
-Copy
-Edit
+
 {
   "access": "<access_token>",
   "refresh": "<refresh_token>"
@@ -140,8 +133,7 @@ Edit
 Headers:
 
 ```makefile
-Copy
-Edit
+
 Authorization: Bearer <access_token>
 
 ```
@@ -149,8 +141,7 @@ Authorization: Bearer <access_token>
 # Body:
 
 ```json
-Copy
-Edit
+
 {
   "plain_text": "My secret info"
 }
@@ -159,8 +150,7 @@ Edit
 # Response:
 
 ```json
-Copy
-Edit
+
 {
   "id": 1,
   "decrypted_text": "My secret info"
@@ -171,8 +161,7 @@ Edit
 # To run the API tests:
 
 ```bash
-Copy
-Edit
+
 python manage.py test api
 ```
 
@@ -186,8 +175,7 @@ Runs tests automatically on every push to main
 .github/workflows/django.yml:
 
 ```yaml
-Copy
-Edit
+
 name: Django CI
 
 on:
