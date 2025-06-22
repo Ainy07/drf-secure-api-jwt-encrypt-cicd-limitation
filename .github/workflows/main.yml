@@ -23,4 +23,5 @@ jobs:
 
       - name: Run tests
         run: |
-          python manage.py test api 
+          cd secure_api_project
+          python manage.py test api
