@@ -26,13 +26,6 @@ SECRET_KEY = 'django-insecure-%r12qf&%virtla@cf3lwt7snp8fu-9*7vk%5=$pg8!9$6x@-=$
 DEBUG = True
 ALLOWED_HOSTS = ["ainy07.pythonanywhere.com"]
 
-<<<<<<< HEAD
-ALLOWED_HOSTS = ["ainy07.pythonanywhere.com"]
-
-=======
->>>>>>> 5dfac94 (urls)
-
-
 # Application definition
 
 INSTALLED_APPS = [
