@@ -219,4 +219,30 @@ simplejwt JWT package
 
 
 
+## 🌍 Live Demo  
 
+This project is live on **PythonAnywhere** 🚀  
+
+🔗 **Base URL:** [https://ainy07.pythonanywhere.com/](https://ainy07.pythonanywhere.com/)  
+
+### Available Endpoints  
+
+| Method | Endpoint | Description | Auth Required |
+|--------|----------|-------------|---------------|
+| POST   | `/api/token/` | Obtain JWT Access + Refresh token | ❌ |
+| POST   | `/api/token/refresh/` | Refresh Access Token | ❌ |
+| GET/POST | `/api/secure-data/` | Store & Retrieve encrypted secure data | ✅ Bearer Token |
+| Admin  | `/admin/` | Django Admin Panel | ✅ Superuser |  
+
+---
+
+📌 Example request for secure data (live):  
+
+```http
+POST https://ainy07.pythonanywhere.com/api/secure-data/
+Authorization: Bearer <access_token>
+Content-Type: application/json
+
+{
+  "plain_text": "My secret info"
+}
