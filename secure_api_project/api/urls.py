@@ -1,9 +1,8 @@
 from django.urls import path
-from .views import SecureDataListCreate
-def api_home(request):
-    return JsonResponse({"message": "API root is working 🚀", "available_endpoints": ["/secure-data/", "/token/", "/token/refresh/"]})
+from django.shortcuts import redirect
+from . import views
 
 urlpatterns = [
-    path('', api_home),  
-    path('secure-data/', SecureDataListCreate.as_view(), name="secure-data"),
+    path('', lambda request: redirect('secure-data')),  # 👈 redirect karega
+    path('secure-data/', views.secure_data, name='secure-data'),
 ]
