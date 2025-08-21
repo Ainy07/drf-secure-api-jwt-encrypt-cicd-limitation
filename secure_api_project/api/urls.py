@@ -1,8 +1,8 @@
 from django.urls import path
 from django.shortcuts import redirect
-from . import views
+from .views import SecureDataListCreate
 
 urlpatterns = [
-    path('', lambda request: redirect('secure-data')),  # 👈 redirect karega
-    path('secure-data/', views.secure_data, name='secure-data'),
+    path('', lambda request: redirect('secure-data')),  
+    path('secure-data/', SecureDataListCreate.as_view(), name='secure-data'),
 ]
