@@ -146,3 +146,6 @@ SIMPLE_JWT = {
     'ACCESS_TOKEN_LIFETIME': timedelta(minutes=15),
     'AUTH_HEADER_TYPES': ('Bearer',),
 }
+
+
+ALLOWED_HOSTS = ["*"]
