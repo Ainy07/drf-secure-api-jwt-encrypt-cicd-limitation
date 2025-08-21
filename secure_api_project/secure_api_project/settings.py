@@ -144,9 +144,4 @@ SIMPLE_JWT = {
     'ACCESS_TOKEN_LIFETIME': timedelta(minutes=15),
     'AUTH_HEADER_TYPES': ('Bearer',),
 }
-<<<<<<< HEAD
 
-
-
-=======
->>>>>>> 5dfac94 (urls)
